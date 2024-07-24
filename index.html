@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 95 Emulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="desktop">
+        <div class="icon" data-window="Мой компьютер">
+            <img src="assets/my-computer.png" alt="My Computer">
+            <span>Мой компьютер</span>
+        </div>
+        <div class="icon" data-window="Корзина">
+            <img src="assets/recycle-bin.png" alt="Recycle Bin">
+            <span>Корзина</span>
+        </div>
+        <div id="taskbar">
+            <div id="start-button">Пуск</div>
+            <div id="taskbar-windows"></div>
+        </div>
+    </div>
+
+    <div id="start-menu" class="start-menu" style="display: none;">
+        <button id="restart-button">Рестарт</button>
+    </div>
+
+    <div id="window-template" class="window" style="display: none;">
+        <div class="window-header">
+            <span class="window-title">Окно</span>
+            <button class="window-close">X</button>
+        </div>
+        <div class="window-content">
+            Содержимое окна
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
